@@ -10,7 +10,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
-    "prestorybook":"rnstl"
+    "prestorybook":"rnstl",
+    "prettier": "prettier --config ./.prettierrc --write  \"./src/**/*.{js,jsx,ts,tsx}\""
 
   },
   "dependencies": {
