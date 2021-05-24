@@ -1,2 +1,5 @@
 export { Button } from './button'
 export { Form } from './form'
+export { FieldWrapper } from './field-wrapper'
+export { TextInput } from './text-input'
+export { Switch } from './switch'

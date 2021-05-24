@@ -4,7 +4,7 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 type TProps = {
 	onPress: () => void
 	children: React.ReactNode
-	outline: boolean
+	outline?: boolean
 }
 
 export const Button = ({ onPress, children, outline = false }: TProps) => {

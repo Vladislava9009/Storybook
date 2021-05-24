@@ -10,9 +10,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
-    "prestorybook":"rnstl",
+    "prestorybook": "rnstl",
     "prettier": "prettier --config ./.prettierrc --write  \"./src/**/*.{js,jsx,ts,tsx}\""
-
   },
   "dependencies": {
     "react": "17.0.1",
@@ -27,6 +26,7 @@
     "@storybook/addon-links": "^5.3",
     "@storybook/addon-ondevice-actions": "^5.3.23",
     "@storybook/addon-ondevice-knobs": "^5.3.25",
+    "@storybook/addon-storyshots": "^6.2.9",
     "@storybook/react-native": "^5.3.25",
     "@storybook/react-native-server": "^5.3.23",
     "@types/jest": "^26.0.23",
@@ -47,6 +47,9 @@
   },
   "jest": {
     "preset": "react-native",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -56,13 +59,12 @@
       "node"
     ]
   },
-  "config":{
-    "react-native-storybook-loader":{
-"searchDir":[
-  "./src"
-],
-"pattern":"**/*.stories.js"
-
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src"
+      ],
+      "pattern": "**/*.stories.js"
     }
   }
 }
